@@ -10,12 +10,29 @@ html, body {
 
 body {
     padding: 20px;
-    margin: 0 0 auto;
+    margin: 0 auto;
     background: linear-gradient(top, #222, #333);
-    max-width: 1024px;
+    max-width: 1300px;
     color: #595B66;
     font-family: "Open Sans", sans-serif;
 
+}
+
+.box {
+    background-color: #FFFFFF;
+    margin: 0 0 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 15px;
+    background-color: #797979;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    line-height: 2;
 }
 
 [class$='face'] {
@@ -46,23 +63,121 @@ body {
     box-shadow: inset 0 3px #111, inset 0 -3px #555;
 }
 
-.first-face {
+.single-first-face {
+    display: flex;
+}
+
+.single-second-face {
+    display: flex;
+    justify-content: center;
+}
+
+.single-third-face {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.single-forth-face {
+    display: flex;
+    align-items: center;
+}
+
+.single-fifth-face {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.second-face {
-    display: flex;
-    flex-direction: row;
-}
-
-.third-face {
+.single-sixth-face {
     display: flex;
     justify-content: flex-end;
-
+    align-items: center;
 }
 
-.third-face .pip:nth-of-type(1) {
+.single-seventh-face {
+    display: flex;
+    align-items: flex-end;
+}
+
+.single-eighth-face {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.double-first-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-second-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.double-third-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.double-forth-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.double-fifth-face {
+    display: flex;
+}
+
+.double-fifth-face .pip:nth-child(2) {
+    align-self: center;
+}
+
+.double-sixth-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-sixth-face .pip:nth-child(2) {
     align-self: flex-end;
+}
+
+.triple-first-face {
+    display: flex;
+}
+
+.triple-first-face .pip:nth-child(2) {
+    align-self: center;
+}
+
+.triple-first-face .pip:nth-child(3) {
+    align-self: flex-end;
+}
+
+.triple-second-face {
+    display: flex;
+    align-items: center;
+}
+
+.triple-third-face {
+    display: flex;
+    align-items: flex-end;
+}
+
+.triple-forth-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ultra-first-face {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
 }
