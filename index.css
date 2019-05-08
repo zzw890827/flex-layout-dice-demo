@@ -175,9 +175,125 @@ p {
     align-items: center;
 }
 
-.ultra-first-face {
+.other-first-face {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-content: space-between;
+}
+
+.other-second-face {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.other-second-face .column {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.other-third-face {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.other-forth-face {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.other-fifth-face {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.other-fifth-face .row {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.other-fifth-face .row:nth-child(2) {
+    justify-content: center;
+}
+
+.other-fifth-face .row:nth-child(3) {
+    justify-content: space-between;
+}
+
+.other-sixth-face {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-face .pip:nth-child(2) {
+    align-self: flex-end;
+}
+
+.three-face {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three-face .row {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.three-face .row:nth-child(2) {
+    justify-content: center;
+}
+
+.three-face .row:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.four-face {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.four-face .row {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.fifth-face {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.fifth-face .row {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-face .row:nth-child(2) {
+    justify-content: center;
+}
+
+.six-face {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-content: space-between;
 }
